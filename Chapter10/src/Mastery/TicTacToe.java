@@ -17,8 +17,8 @@ public class TicTacToe {
 
 	Program: TicTacToe.java          
 
-	Purpose: Update BreakAPlate to show prize images instead of text. 
-	Use tiger_plush.gif and sticker.gif for prizes, and display placeholder.gif at the start of each game.
+	Purpose: 2 players play against eachother in a game of tic tac toe, where one player is X and the other is O.
+	In order to win you'll have to get three in a row 
 
 	Author: Usman Elmi, 
 	School: CHHS

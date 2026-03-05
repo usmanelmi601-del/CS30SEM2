@@ -39,11 +39,7 @@ public class BreakAPlate {
 	}
 
 
-	/* Screen Dump
-	 
-	Paste the output of your code here
-	 
-	 */
+	
 	private JFrame frame;
 	private JLabel lblPlates, lblPrize;  // Labels to display plates and prize
 
@@ -66,6 +62,16 @@ public class BreakAPlate {
 	}
 
 	private void initialize() {
+		
+		
+		ImageIcon imgAllBroken = new ImageIcon("..\\Chapter10\\src\\Mastery\\plates_all_broken.gif");
+		ImageIcon imgTwoBroken = new ImageIcon("../Chapter10/src/Mastery/plates_two_broken.gif");
+		ImageIcon sticker = new ImageIcon("../Chapter10/src/Mastery/sticker.gif");
+		ImageIcon tiger = new ImageIcon("../Chapter10/src/Mastery/tiger_plush.gif");
+		
+		
+		
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,13 +106,10 @@ public class BreakAPlate {
 				
 				// Reset to 3 unbroken plates, clear prize
 				lblPlates.setIcon(new ImageIcon(BreakAPlate.class.getResource("/Mastery/plates.gif")));
+				
 				lblPrize.setIcon(null);
 				
 				// Loading the images
-				ImageIcon imgAllBroken = new ImageIcon(BreakAPlate.class.getResource("/Mastery/plates_all_broken.gif"));
-				ImageIcon imgTwoBroken = new ImageIcon(BreakAPlate.class.getResource("/Mastery/plates_two_broken.gif"));
-				ImageIcon sticker = new ImageIcon(BreakAPlate.class.getResource("/Mastery/sticker.gif"));
-				ImageIcon tiger = new ImageIcon(BreakAPlate.class.getResource("/Mastery/tiger_plush.gif"));
 				
 				// Random outcomes
 				if (Math.random() < 0.5) {
