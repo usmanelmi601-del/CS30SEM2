@@ -1,9 +1,3 @@
-package Mastery;
-
-import java.awt.*;
-import javax.swing.*;
-
-public class LocalBank {
 	/*
 
 	Program: LocalBank.java          
@@ -16,6 +10,14 @@ public class LocalBank {
 	 
 
 	*/
+
+package Mastery;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class LocalBank {
+
     private Bank lbank = new Bank();
 
     private JFrame frame;

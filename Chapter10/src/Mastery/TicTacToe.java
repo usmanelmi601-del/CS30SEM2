@@ -1,3 +1,16 @@
+/*
+
+	Program: TicTacToe.java          
+
+	Purpose: 2 players play against eachother in a game of tic tac toe, where one player is X and the other is O.
+	In order to win you'll have to get three in a row 
+
+	Author: Usman Elmi, 
+	School: CHHS
+	Course: Computer Programming 30
+	 
+
+	*/
 package Mastery;
 
 import java.awt.EventQueue;
@@ -13,19 +26,7 @@ import java.awt.Color;
 
 public class TicTacToe {
 	
-	/*
-
-	Program: TicTacToe.java          
-
-	Purpose: 2 players play against eachother in a game of tic tac toe, where one player is X and the other is O.
-	In order to win you'll have to get three in a row 
-
-	Author: Usman Elmi, 
-	School: CHHS
-	Course: Computer Programming 30
-	 
-
-	*/
+	
     static int moveCount = 0;
     static String[] cells = new String[9];
 

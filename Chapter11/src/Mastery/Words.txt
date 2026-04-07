@@ -1,0 +1,10 @@
+apple
+banana
+java
+school
+guitar
+computer
+pizza
+dragon
+planet
+river

@@ -1,3 +1,16 @@
+	/*
+
+	Program: BreakAPlate.java          
+
+	Purpose: Users choose a conversion type from a combo box, and the matching formula appears in a label. 
+	Conversions: 1 inch = 2.54 centimeters; 1 foot = 0.3048 meters; 1 gallon = 4.5461 liters; 1 pound = 0.4536 kilograms.
+
+	Author: Usman Elmi, 
+	School: CHHS
+	Course: Computer Programming 30
+	 
+
+	*/
 package Mastery;
 
 import java.awt.EventQueue;
@@ -14,19 +27,7 @@ import java.awt.Color;
 
 
 public class BreakAPlate {
-	/*
 
-	Program: BreakAPlate.java          
-
-	Purpose: Users choose a conversion type from a combo box, and the matching formula appears in a label. 
-	Conversions: 1 inch = 2.54 centimeters; 1 foot = 0.3048 meters; 1 gallon = 4.5461 liters; 1 pound = 0.4536 kilograms.
-
-	Author: Usman Elmi, 
-	School: CHHS
-	Course: Computer Programming 30
-	 
-
-	*/
 
 	public class Tester 
 	{
