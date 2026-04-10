@@ -1,0 +1,8 @@
+John
+99
+Sarah
+67
+Mike
+76
+Anna
+40

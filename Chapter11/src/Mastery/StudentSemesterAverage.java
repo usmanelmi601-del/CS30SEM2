@@ -61,37 +61,37 @@ public class StudentSemesterAverage {
 		
 		JLabel lblNewLabel = new JLabel("Student Name:");
 		lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 14));
-		lblNewLabel.setBounds(10, 11, 142, 25);
+		lblNewLabel.setBounds(86, 11, 142, 25);
 		panel.add(lblNewLabel);
 		
 		JLabel lblGradeLevel = new JLabel("Grade Level:");
 		lblGradeLevel.setFont(new Font("Segoe UI", Font.BOLD, 14));
-		lblGradeLevel.setBounds(10, 43, 142, 25);
+		lblGradeLevel.setBounds(369, 11, 142, 25);
 		panel.add(lblGradeLevel);
 		
 		JLabel lblSemesterNumber = new JLabel("Semester Number:");
 		lblSemesterNumber.setFont(new Font("Segoe UI", Font.BOLD, 14));
-		lblSemesterNumber.setBounds(10, 79, 160, 25);
+		lblSemesterNumber.setBounds(186, 83, 160, 25);
 		panel.add(lblSemesterNumber);
 		
 		JLabel lblGrade = new JLabel("Grade 1:");
 		lblGrade.setFont(new Font("Segoe UI", Font.BOLD | Font.ITALIC, 13));
-		lblGrade.setBounds(10, 115, 142, 25);
+		lblGrade.setBounds(10, 151, 142, 25);
 		panel.add(lblGrade);
 		
 		JLabel lblGrade_5 = new JLabel("Grade 2:");
 		lblGrade_5.setFont(new Font("Segoe UI", Font.BOLD | Font.ITALIC, 13));
-		lblGrade_5.setBounds(10, 151, 142, 25);
+		lblGrade_5.setBounds(320, 151, 142, 25);
 		panel.add(lblGrade_5);
 		
 		JLabel lblGrade_1 = new JLabel("Grade 3:");
 		lblGrade_1.setFont(new Font("Segoe UI", Font.BOLD | Font.ITALIC, 13));
-		lblGrade_1.setBounds(10, 187, 142, 25);
+		lblGrade_1.setBounds(10, 198, 142, 25);
 		panel.add(lblGrade_1);
 		
 		JLabel lblGrade_2 = new JLabel("Grade 4:");
 		lblGrade_2.setFont(new Font("Segoe UI", Font.BOLD | Font.ITALIC, 13));
-		lblGrade_2.setBounds(10, 223, 142, 25);
+		lblGrade_2.setBounds(320, 198, 142, 25);
 		panel.add(lblGrade_2);
 		
 		JLabel lblAverage = new JLabel("Average:");
@@ -101,33 +101,33 @@ public class StudentSemesterAverage {
 		
 		stuname = new JTextField();
 		stuname.setToolTipText("Enter student name"); //tool tip
-		stuname.setBounds(162, 13, 366, 25);
+		stuname.setBounds(67, 47, 142, 25);
 		panel.add(stuname);
 		
 		grdlvl = new JTextField();
 		grdlvl.setToolTipText("Enter grade level");
-		grdlvl.setBounds(162, 43, 366, 25);
+		grdlvl.setBounds(336, 47, 142, 25);
 		panel.add(grdlvl);
 		
 		semnum = new JTextField();
 		semnum.setToolTipText("Enter semester number");
-		semnum.setBounds(162, 79, 366, 25);
+		semnum.setBounds(86, 115, 366, 25);
 		panel.add(semnum);
 		
 		grd1 = new JTextField();
-		grd1.setBounds(162, 115, 366, 25);
+		grd1.setBounds(67, 151, 100, 25);
 		panel.add(grd1);
 		
 		grd2 = new JTextField();
-		grd2.setBounds(162, 151, 366, 25);
+		grd2.setBounds(378, 152, 100, 25);
 		panel.add(grd2);
 		
 		grd3 = new JTextField();
-		grd3.setBounds(162, 187, 366, 25);
+		grd3.setBounds(378, 199, 100, 25);
 		panel.add(grd3);
 		
 		grd4 = new JTextField();
-		grd4.setBounds(162, 223, 366, 25);
+		grd4.setBounds(67, 199, 100, 25);
 		panel.add(grd4);
 		
 		JLabel avg = new JLabel("");
@@ -139,26 +139,21 @@ public class StudentSemesterAverage {
 		dis.setLineWrap(true); //wrap text
 		dis.setWrapStyleWord(true);
 		dis.setEditable(false);
-		dis.setBounds(20, 289, 481, 240);
+		dis.setBounds(20, 289, 481, 118);
 		panel.add(dis);
 		
 		Color buttonColor = new Color(100, 149, 237);
 
 		JButton savebtn = new JButton("Save To File");
 		savebtn.setBackground(buttonColor);
-		savebtn.setBounds(10, 540, 131, 23);
+		savebtn.setBounds(39, 540, 131, 23);
 		panel.add(savebtn);
 		
 		JButton showbtn = new JButton("Show File");
 		showbtn.setBackground(buttonColor);
-		showbtn.setBounds(193, 540, 152, 23);
+		showbtn.setBounds(326, 540, 152, 23);
 		panel.add(showbtn);
 		
-		JButton clearbtn = new JButton("Delete File");
-		clearbtn.setBackground(buttonColor);
-		clearbtn.setBounds(397, 540, 131, 23);
-		panel.add(clearbtn);
-
 		
 		savebtn.addActionListener(e -> {
 			String studentname = stuname.getText().trim();
@@ -206,13 +201,7 @@ public class StudentSemesterAverage {
 			}
 		});
 
-		clearbtn.addActionListener(e -> {
-			try (FileOutputStream fos = new FileOutputStream(dataFile)) {
-				dis.setText("File cleared.");
-			} catch (Exception err) {
-				JOptionPane.showMessageDialog(null, "Error clearing file");
-			}
-		});
+
 	}
 	
 	
